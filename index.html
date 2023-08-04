@@ -34,11 +34,11 @@
 
 <body class="font-manrope">
     <header class="container mx-auto">
-        <div class="hero">
-            <div class="hero-content flex-col lg:flex-row-reverse">
+        <div class="my-32">
+            <div class="flex justify-between items-center marker:flex-col lg:flex-row-reverse">
                 <div>
                     <!-- For Picture and rating -->
-                    <img src="/images/banner.png" class="max-w-2xl" />
+                    <img src="/images/banner.png" class=" max-w-lg lg:max-w-2xl" />
                     <!-- ratings badge -->
                     <div class="-mt-32 ml-24  flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60">
                         <i class="fa-solid fa-star text-3xl text-amber-300"></i>
@@ -55,14 +55,15 @@
                 <!-- For Picture and rating ends -->
 
 
-                <div>
+                <div class="flex flex-col">
                     <h1 class=" text-5xl lg:text-7xl font-extrabold">It's good
                         <br>tea time at The <br>Tea House
                     </h1>
                     <p class="text-lg py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste
                         Buds.
                     </p>
-                    <button class="btn btn-primary bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Explore
+                    <button
+                        class="btn btn-primary bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-44">Explore
                         More <img src="images/arrow.png" alt=""></button>
                 </div>
             </div>
@@ -245,7 +246,14 @@
         <!--  -->
 
         <!-- section footer -->
-        <footer class="p-10 bg-base-200">
+        <footer class=" px-4 lg:px-48 py-16 bg-base-200 text-base-content">
+            <div class="flex justify-between mb-6">
+                <img src="./images/cup.png" alt="">
+                <p>
+                    <span>Ready to get started? </span>
+                    <button class="btn btn-primary"> Get Start</button>
+                </p>
+            </div>
             <div class="footer   text-base-content">
                 <div>
                     <span class="footer-title">Services</span>
@@ -273,10 +281,14 @@
                         <label class="label">
                             <span class="label-text">Enter your email address</span>
                         </label>
+                        <!-- input button -->
                         <div class="relative">
-                            <input type="text" placeholder="username@site.com"
-                                class="input input-bordered w-full pr-16" />
-                            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                            <input type="text" placeholder="        @Email.com"
+                                class="py-2 bg-transparent border-b-4 border-cyan-900" />
+                            <button
+                                class="btn btn-primary absolute top-0 right-0 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"><i
+                                    class="fa-solid fa-chevron-right"
+                                    style="color: #041128; font-size: xx-large;"></i></button>
                         </div>
                     </div>
                 </div>
